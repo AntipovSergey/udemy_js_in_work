@@ -294,9 +294,26 @@ window.addEventListener('DOMContentLoaded', () => {
         return await result.json();
     }
 
-    getData('http://localhost:3000/menu')
+    // getData('http://localhost:3000/menu')
+    //     .then(data => {
+    //         data.forEach((object) => {
+    //             const {img, altimg, title, descr, price} = object;
+    //             const container = ".menu .container";
+
+    //             new MenuCard(
+    //                 img,
+    //                 altimg,
+    //                 title,
+    //                 descr,
+    //                 price,
+    //                 container
+    //             ).render();
+    //         })
+    //     })
+
+    axios.get('http://localhost:3000/menu')
         .then(data => {
-            data.forEach((object) => {
+            data.data.forEach((object) => {
                 const {img, altimg, title, descr, price} = object;
                 const container = ".menu .container";
 
