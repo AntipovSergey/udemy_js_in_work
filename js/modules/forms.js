@@ -1,5 +1,10 @@
-import { showModal, closeModal } from './modal.js';
-import { postData } from '../services/services.js'
+import {
+    showModal,
+    closeModal
+} from './modal.js';
+import {
+    postData
+} from '../services/services.js'
 
 function forms(formSelector, modalTimerId) {
     const forms = document.querySelectorAll(formSelector);

@@ -46,4 +46,7 @@ function modal(triggerSelector, modalSelector, modalTimerId) {
 }
 
 export default modal;
-export { showModal, closeModal };
+export {
+    showModal,
+    closeModal
+};

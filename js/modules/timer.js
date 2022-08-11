@@ -38,7 +38,7 @@ function timer(id, deadline) {
             hours = timer.querySelector('#hours'),
             minutes = timer.querySelector('#minutes'),
             seconds = timer.querySelector('#seconds');
-            
+
 
         const updateClock = () => {
             const t = getTimeRemaining(endtime);

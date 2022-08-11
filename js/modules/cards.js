@@ -1,4 +1,6 @@
-import { getData } from '../services/services.js'
+import {
+    getData
+} from '../services/services.js'
 
 function cards() {
     class MenuCard {

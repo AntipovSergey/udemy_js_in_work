@@ -20,4 +20,7 @@ const getData = async (url) => {
     return await result.json();
 }
 
-export { postData, getData };
+export {
+    postData,
+    getData
+};
